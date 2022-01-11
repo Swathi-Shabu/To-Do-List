@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Connecting with CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Connecting With JS-->
+    <script src="app.js"></script>
+
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <header>
+        <!--Main Heading-->
+        <div class="container">
+            <div class="row">
+                <font face="Times Nue Roman" size="25" color="black">
+                    <strong>ToDo List</strong>
+                </font>
+            </div>
+        </div>
+
+    </header>
+    <!--Adding items to the list-->
+    <div class="container mt-3">
+        <h2>Add Items</h2>
+        <form id="addForm">
+            <div class="row">
+                <input type="text" onkeyup="toggleButton(this, 'submit')" class="form-control" id="item">
+            </div>
+            <input type="submit" class="btn btn-dark" id="submit" value="Submit" disabled>
+    </div>
+    </form>
+    <!--Displaying the tasks-->
+    <h3 class="mt-4">Tasks</h3>
+    <form id="addForm">
+        <ul class="list-group" id="items"></ul>
+    </form>
+    </div>
+
+</body>
+
+</html>
